@@ -8,7 +8,7 @@
   <div class="outer">
     <div class="logo"></div>
     <h1 class="title">Leaderboard</h1>
-    <div class="subtitle">Select a scientist to give them points</div>
+    <div class="subtitle">Select a scientist to give or take points</div>
     {{> leaderboard}}
   </div>
 </body>
@@ -23,8 +23,9 @@
   {{#if selectedName}}
     <div class="details">
       <div class="name">{{selectedName}}</div>
-      <button class="points inc">Add 5 points</button>
-      <button class="points dec">Remove 5 points</button>
+      <button class="points custom-button inc">Add 5 points</button>
+      <button class="points custom-button dec">Remove 5 points</button>
+      <button class="custom-button remove-scientist">Remove Scientist</button>
     </div>
   {{else}}
     <div class="message">Click a player to select</div>

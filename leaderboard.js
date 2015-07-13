@@ -21,6 +21,9 @@ if (Meteor.isClient) {
 
     'click .dec': function () {
       Players.update(Session.get("selectedPlayer"), {$inc: {score: -5}});
+    },
+    'click .remove-scientist': function() {
+      Players.remove({_id: Session.get("selectedPlayer")});
     }
   });
 

@@ -118,24 +118,37 @@ body {
   vertical-align: middle;
 }
 
-.details .inc {
+.custom-button {
   border-radius: 3em;
-  border: green 1px solid;
   background: transparent;
-  color: green;
   cursor: pointer;
   float: right;
   font-family: 'Source Sans Pro' ,'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1;
   margin: 0;
-  margin-bottom: 10px;
   outline: none;
   padding: 10px 30px;
   transition: all 200ms ease-in;
   display: inline-block;
   clear: both;
   width: 180px;
+  margin-bottom: 10px;
+}
+
+.remove-scientist:hover {
+  background: #eb5f3a;
+  color: #fff;
+}
+
+.remove-scientist {
+  border: red 1px solid;
+  color: #eb5f3a;
+}
+
+.details .inc {
+  border: green 1px solid;
+  color: green;
 }
 
 .inc:hover {
@@ -148,22 +161,8 @@ body {
 }
 
 .details .dec {
-  border-radius: 3em;
   border: red 1px solid;
-  background: transparent;
   color: #eb5f3a;
-  cursor: pointer;
-  float: right;
-  font-family: 'Source Sans Pro' ,'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1;
-  margin: 0;
-  outline: none;
-  padding: 10px 30px;
-  transition: all 200ms ease-in;
-  display: inline-block;
-  clear: both;
-  width: 180px;
 }
 
 .dec:hover {
