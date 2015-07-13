@@ -135,6 +135,7 @@ body {
   transition: all 200ms ease-in;
   display: inline-block;
   clear: both;
+  width: 180px;
 }
 
 .inc:hover {
@@ -162,6 +163,7 @@ body {
   transition: all 200ms ease-in;
   display: inline-block;
   clear: both;
+  width: 180px;
 }
 
 .dec:hover {
