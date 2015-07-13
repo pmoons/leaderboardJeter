@@ -17,6 +17,10 @@ if (Meteor.isClient) {
   Template.leaderboard.events({
     'click .inc': function () {
       Players.update(Session.get("selectedPlayer"), {$inc: {score: 5}});
+    },
+
+    'click .dec': function () {
+      Players.update(Session.get("selectedPlayer"), {$inc: {score: -5}});
     }
   });
 
