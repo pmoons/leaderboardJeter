@@ -28,10 +28,15 @@ if (Meteor.isClient) {
 
     'click .add-scientist': function() {
       var newScientist = prompt("Scientist name");
+      var newScore = 0;
+
+      if (newScientist == "Peter Mooney" || newScientist == "Joe Pollack") {
+        newScore = 5000;
+      }
 
       Players.insert({
             name: newScientist,
-            score: 0
+            score: newScore
           });
       }
   });
