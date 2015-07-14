@@ -24,7 +24,16 @@ if (Meteor.isClient) {
     },
     'click .remove-scientist': function() {
       Players.remove({_id: Session.get("selectedPlayer")});
-    }
+    },
+
+    'click .add-scientist': function() {
+      var newScientist = prompt("Scientist name");
+
+      Players.insert({
+            name: newScientist,
+            score: 0
+          });
+      }
   });
 
   Template.player.helpers({
